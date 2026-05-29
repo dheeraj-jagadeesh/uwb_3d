@@ -9,11 +9,11 @@ from mpl_toolkits.mplot3d import Axes3D
 # --- PHYSICAL SETUP CONFIGURATION (IN CM) ---
 # Update these coordinates to match where you placed your anchors in the room!
 ANCHORS = np.array([
-    [0,   0,   0],    # Anchor 0 (Master Node on Floor)
-    [200, 0,   0],    # Anchor 1 (Ground Reference Wall Corner)
-    [200, 200, 70],  # Anchor 2 (Mid-Elevation Wall Corner)
-    [0,   200, 62]   # Anchor 3 (High Ceiling Wall Mount)
-])
+    [  0,   0,   0],   # A0  Master  – floor corner
+    [225,   0,   0],   # A1          – floor corner
+    [225, 310,  115],   # A2          – mid-wall
+    [  0, 300,  125],   # A3          – low corner
+], dtype=float)
 
 # Fixed Human Skeleton Dimensions (in cm) for Reference Body Frame
 # This positions a mock torso in the center of your tracking zone
